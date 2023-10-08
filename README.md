@@ -1,4 +1,4 @@
-# Viju Video Player
+#  Video Player
 
 Видео плеер для проигрывания HLS потоков. 
 Работает в 4х режимах: 
@@ -41,13 +41,14 @@
 - `src/player/versions/embed` - лежит код для `iframe` плеера.
 - `src/player/versions/smart` - лежит код для `smart-tv` плеера
 - `src/player/versions/web` - лежит код для `web` плеера.
+- `src/player/versions/web-components` - лежит код для web-components
 
 Важно соблюдать данную иерархию. Если вы пишете компонент, и понимание в теории чтон он может реиспользоваться в будущем в других
 плеерах - обязательно выносить его на общий уровень `src/player`
 
 ## Сборки
 
-### Viju Web Components
+###  Web Components
 
 Команды для сборки:
 
@@ -55,7 +56,7 @@
 2) Сборка для режима разработки без `devtools` с включенными HMR: `npm run dev:player:web`
 3) Продакшн сборка для публикации в npm-registry: `npm run lib:player:web`
 
-### Viju SmartTV Player
+###  SmartTV Player
 
 Команды для сборки:
 
@@ -65,23 +66,3 @@
 
 Доступные переменные окружения:
 `Пока нет доступных переменных окружения`.
-
-## Где можно посмотреть / Демо-стенд
-
-- testvip.ru демо-стенд https://player.testvip.ru/devtool/combined/
-
-## Как собрать сборку / опубликовать билд?
-
-1) Создайте в корне скриппт `publish.sh`
-2) Скроете файл через `.gitignore` (сейчас уже скрыт)
-3) Заведите `.sh` файл с следующим содержанием
-
-```haml
-#!/bin/bash
-npm version patch
-npm run lib:player:all
-NPM_TOKEN=<npm_token> npm publish
-git push origin dev
-```
-
-4) Где <npm_token> - ваш NPM токен от Gitlab Package Registry

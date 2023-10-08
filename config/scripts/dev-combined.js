@@ -13,7 +13,7 @@ const commands = [
     prefixColor: 'yellow.bold',
   },
   {
-    name: 'Devtool Viju Web',
+    name: 'Devtool Web',
     command: '\
       PORT=8081 \
       PLAYER_PUBLIC_PATH=http://localhost:8082/ \
@@ -22,7 +22,7 @@ const commands = [
     prefixColor: 'cyan.bold',
   },
   {
-    name: 'Devtool Viju Web',
+    name: 'Player  Web',
     command: '\
       PORT=8082 \
       npm run dev:player:web \
@@ -30,7 +30,7 @@ const commands = [
     prefixColor: 'cyan.bold',
   },
   {
-    name: 'Devtool Viju Embed',
+    name: 'Devtool Embed',
     command: '\
       PORT=8083 \
       PLAYER_PUBLIC_PATH=http://localhost:8084/ \
@@ -39,7 +39,7 @@ const commands = [
     prefixColor: 'cyan.bold',
   },
   {
-    name: 'Devtool Viju Embed',
+    name: 'Player Embed',
     command: '\
       PORT=8084 \
       npm run dev:player:embed \
@@ -47,7 +47,7 @@ const commands = [
     prefixColor: 'blue.bold',
   },
   {
-    name: 'Devtool Viju Web',
+    name: 'Devtool Smart',
     command: '\
       PORT=8085 \
       PLAYER_PUBLIC_PATH=http://localhost:8086/ \
@@ -56,10 +56,27 @@ const commands = [
     prefixColor: 'cyan.bold',
   },
   {
-    name: 'Devtool Viju Web',
+    name: 'Player Smart',
     command: '\
       PORT=8086 \
       npm run dev:player:smart \
+    ',
+    prefixColor: 'cyan.bold',
+  },
+  {
+    name: 'Devtool Web components',
+    command: '\
+      PORT=8085 \
+      PLAYER_PUBLIC_PATH=http://localhost:8088/ \
+      npm run dev:devtool:web-components \
+    ',
+    prefixColor: 'cyan.bold',
+  },
+  {
+    name: 'Player Web components',
+    command: '\
+      PORT=8086 \
+      npm run dev:player:web-components \
     ',
     prefixColor: 'cyan.bold',
   },

@@ -34,7 +34,6 @@
     "build:player:smart": "vite build --config config/player/vite.config.player.smart.ts",
     "build:player:embed": "vite build --config config/player/vite.config.player.embed.ts",
     "dev:devtool:combined": "vite --config config/devtool/vite.config.devtool.combined.ts",
-    "dev:embed:exec": "node ./config/scripts/dev-embed.js",
     "dev:devtool:embed": "vite --config config/devtool/vite.config.devtool.embed.ts",
     "dev:devtool:web": "vite --config config/devtool/vite.config.devtool.web.ts",
     "dev:devtool:smart": "vite --config config/devtool/vite.config.devtool.smart.ts",
@@ -51,7 +50,6 @@
   "dependencies": {
     "@types/chromecast-caf-sender": "^1.0.5",
     "@vueuse/core": "^9.3.1",
-    "dayjs": "^1.11.5",
     "hls.js": "^1.4.4",
     "nanoid": "^4.0.2",
     "node-vibrant": "^3.1.6",
