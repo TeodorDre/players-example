@@ -13,6 +13,7 @@ module.exports = {
     // @NOTE: Disabled because it breaks when importing types.
     //        But typescript does this better anyway, so it does not matter.
     'import/named': ['off'],
+    'vue/no-deprecated-html-element-is': ['off'],
 
     'vue/valid-template-root': ['off'],
 

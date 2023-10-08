@@ -35,6 +35,7 @@
     "build:player:embed": "vite build --config config/player/vite.config.player.embed.ts",
     "dev:devtool:combined": "vite --config config/devtool/vite.config.devtool.combined.ts",
     "dev:devtool:embed": "vite --config config/devtool/vite.config.devtool.embed.ts",
+    "dev:devtool:web-components": "vite --config config/devtool/vite.config.devtool.web-components.ts",
     "dev:devtool:web": "vite --config config/devtool/vite.config.devtool.web.ts",
     "dev:devtool:smart": "vite --config config/devtool/vite.config.devtool.smart.ts",
     "dev:player:web": "vite --config config/player/vite.config.player.web.ts",

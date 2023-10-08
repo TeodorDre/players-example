@@ -1,7 +1,7 @@
 import vue from '@vitejs/plugin-vue';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
-import { UserConfigExport } from 'vite';
+import { defineConfig } from 'vite';
 import svgLoader from 'vite-svg-loader';
 
 import { EnvironmentVariable } from './helpers/env';
@@ -12,9 +12,11 @@ const outDir = path.join(root, 'build', EnvironmentVariable.OUTPUT_PATH);
 
 const customTagElements = [
   'google-cast-launcher',
+  'app-player-button',
+  'app-player-title',
 ];
 
-export default {
+export default defineConfig({
   resolve: {
     alias: {
       '@': src,
@@ -60,4 +62,4 @@ export default {
     }),
     svgLoader(),
   ],
-} as UserConfigExport;
+});
