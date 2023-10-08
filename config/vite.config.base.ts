@@ -14,6 +14,7 @@ const customTagElements = [
   'google-cast-launcher',
   'app-player-button',
   'app-player-title',
+  'app-player-timeline',
 ];
 
 export default defineConfig({
