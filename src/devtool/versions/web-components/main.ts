@@ -1,4 +1,4 @@
-import '@/player/versions/web-components/registrations';
+import '@/player/versions/web-components/components/app-element';
 
 import { createApp } from 'vue';
 

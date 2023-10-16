@@ -1,18 +1,18 @@
 <template>
   <div>
-    <app-player-title text="Web Components player" />
-    <button is="app-player-button" @appclick="onClick">
-      Запустить видео
-    </button>
-    <app-player-timeline>
-      <app-player-title text="Контролы плеера" />
-    </app-player-timeline>
+    <app-element ref="appEl" @count-changed="onClick" />
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
+import { AppElement } from '@/player/versions/web-components/components/app-element';
+
 const onClick = (event: Event) => {
   console.log(event);
 };
+
+const appEl = ref<AppElement>();
 </script>
 
